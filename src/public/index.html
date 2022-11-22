@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensajes con websockets</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/funciones.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Implementación de Websocket con Node.js </h1>
+  </header>
+
+  <main class="main">
+    <div class="container-message">
+      <label class="label" for="">Mensaje del servidor</label>
+      <textarea class="message" id="mensajes" rows="30" ></textarea>
+    </div>
+    <form class="Container-message" onSubmit="enviarTexto(event)">
+      <label class="label" for="">Texto a enviar</label>
+      <input class="message" type="text" id="texto" name="texto"/>
+      <button type="submit" id="enviar" disabled>Enviar</button>
+    </form>
+  </main>
+  
+</body>
+</html>
